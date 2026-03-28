@@ -1,21 +1,31 @@
-print("Simple Calculator")
+while True:
+    print("\n--- Simple Calculator ---")
 
-a = float(input("Enter first number: "))
-b = float(input("Enter second number: "))
+    try:
+        a = float(input("Enter first number: "))
+        b = float(input("Enter second number: "))
+    except:
+        print("Invalid input! Please enter numbers.")
+        continue
 
-print("Choose operation: +, -, *, /")
-op = input("Enter operation: ")
+    print("Operations: +  -  *  /")
+    op = input("Choose operation: ")
 
-if op == "+":
-    print("Result:", a + b)
-elif op == "-":
-    print("Result:", a - b)
-elif op == "*":
-    print("Result:", a * b)
-elif op == "/":
-    if b != 0:
-        print("Result:", a / b)
+    if op == "+":
+        print("Result:", a + b)
+    elif op == "-":
+        print("Result:", a - b)
+    elif op == "*":
+        print("Result:", a * b)
+    elif op == "/":
+        if b != 0:
+            print("Result:", a / b)
+        else:
+            print("Cannot divide by zero")
     else:
-        print("Cannot divide by zero")
-else:
-    print("Invalid operation")
+        print("Invalid operation")
+
+    again = input("Do you want to continue? (yes/no): ")
+    if again.lower() != "yes":
+        print("Goodbye!")
+        break
