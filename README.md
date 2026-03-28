@@ -1,12 +1,14 @@
-# Python Calculator
+# Python Calculator 🔢
 
-This is a simple calculator built using Python.
+A simple command-line calculator built using Python.
 
 ## Features
-- Addition
-- Subtraction
-- Multiplication
-- Division
+- Basic operations (+, -, *, /)
+- Error handling
+- Continuous calculation option
+
+## Tech Used
+- Python
 
 ## Author
 Shreya Pol
